@@ -21,9 +21,13 @@ public class Main {
                 user.setName(resultSet.getString(1));
                 users.add(user);
             }
-        } catch (SQLException e) {
+            connect.getConnection().close();
+            statement.close();
+        }
+        catch (SQLException e) {
             e.printStackTrace();
         }
+
         System.out.println(users);
     }
 }
