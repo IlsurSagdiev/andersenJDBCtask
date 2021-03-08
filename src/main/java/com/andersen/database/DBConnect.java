@@ -19,6 +19,7 @@ public class DBConnect {
         }
 
         System.out.println("Connection succeful!");
+
     }
 
     public Connection getConnection() {
