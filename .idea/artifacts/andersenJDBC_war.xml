@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="andersenJDBC:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>andersenJDBC</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="andersenJDBC-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="andersenJDBC:war exploded" />
+    </root>
+  </artifact>
+</component>
