@@ -15,4 +15,6 @@ public interface UserDao {
     public void delete(Integer id);
 
     public List<User> getAllUsers();
+
+    public boolean isExists(User user);
 }

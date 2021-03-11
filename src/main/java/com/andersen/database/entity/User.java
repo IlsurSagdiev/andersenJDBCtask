@@ -6,15 +6,21 @@ public class User {
 
     private Integer id;
     private String name;
-    private String role;
+    private RoleEnum role;
+    private String email;
+    private String password;
 
     public User() {
     }
 
-    public User(Integer id, String name, String role) {
-        this.id = id;
+    public User(String name, RoleEnum role, String email, String password) {
         this.name = name;
         this.role = role;
+        this.email = email;
+        this.password = password;
+    }
+
+    public User(String email, String password) {
     }
 
     public int getId() {
@@ -33,12 +39,30 @@ public class User {
         this.name = name;
     }
 
-    public String getRole() {
+    public RoleEnum getRole() {
         return role;
     }
 
-    public void setRole(String role) {
+    public void setRole(RoleEnum role) {
         this.role = role;
+    }
+
+
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
@@ -57,8 +81,8 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
+                ", role=" + role +
                 '}';
     }
 }
